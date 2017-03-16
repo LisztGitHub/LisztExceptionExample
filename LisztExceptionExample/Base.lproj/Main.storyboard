@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Clc-Ai-toI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LisztException-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmt-nR-CHD">
+                                <rect key="frame" x="30" y="74" width="315" height="44"/>
+                                <color key="backgroundColor" red="0.78175061940000001" green="0.27917973832957405" blue="0.24848154165190051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="q7u-n1-41P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="无网络"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nbE-Lr-MiU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fv4-Bg-TuQ">
+                                <rect key="frame" x="30" y="128" width="315" height="44"/>
+                                <color key="backgroundColor" red="0.78175061940000001" green="0.27917973832957405" blue="0.24848154165190051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="vHo-m0-Irj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="无数据"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N7d-wK-WUk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qS-Ca-1d3">
+                                <rect key="frame" x="30" y="182" width="315" height="44"/>
+                                <color key="backgroundColor" red="0.78175061940000001" green="0.27917973832957405" blue="0.24848154165190051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="9Hy-pH-Ord"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="系统错误"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1iG-Ld-M3E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REr-fG-bVy">
+                                <rect key="frame" x="30" y="236" width="315" height="44"/>
+                                <color key="backgroundColor" red="0.78175061940000001" green="0.27917973832957405" blue="0.24848154165190051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="7aD-2i-faE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="自定义提醒"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v4q-fa-KWq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9qS-Ca-1d3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="BV7-jN-YMd"/>
+                            <constraint firstAttribute="trailing" secondItem="9qS-Ca-1d3" secondAttribute="trailing" constant="30" id="Bu4-DB-bh2"/>
+                            <constraint firstItem="REr-fG-bVy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="E6i-mA-BJH"/>
+                            <constraint firstItem="zmt-nR-CHD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="IAc-lv-NEa"/>
+                            <constraint firstItem="fv4-Bg-TuQ" firstAttribute="top" secondItem="zmt-nR-CHD" secondAttribute="bottom" constant="10" id="PSx-mc-Au4"/>
+                            <constraint firstAttribute="trailing" secondItem="fv4-Bg-TuQ" secondAttribute="trailing" constant="30" id="QAM-2x-5fL"/>
+                            <constraint firstItem="zmt-nR-CHD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="ZVX-fA-W2G"/>
+                            <constraint firstItem="9qS-Ca-1d3" firstAttribute="top" secondItem="fv4-Bg-TuQ" secondAttribute="bottom" constant="10" id="adm-At-pyn"/>
+                            <constraint firstItem="REr-fG-bVy" firstAttribute="top" secondItem="9qS-Ca-1d3" secondAttribute="bottom" constant="10" id="f26-et-M8L"/>
+                            <constraint firstAttribute="trailing" secondItem="zmt-nR-CHD" secondAttribute="trailing" constant="30" id="i7k-Ar-jdc"/>
+                            <constraint firstAttribute="trailing" secondItem="REr-fG-bVy" secondAttribute="trailing" constant="30" id="qRB-EI-Ii1"/>
+                            <constraint firstItem="fv4-Bg-TuQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="zaW-hP-axK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="LisztException" id="vQw-yg-67w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1385" y="81"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dlE-9y-hI5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Clc-Ai-toI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hzh-Kj-Sag">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="EH4-WQ-koO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nIq-aN-Y6Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="777.66116941529242"/>
+        </scene>
+    </scenes>
+</document>
